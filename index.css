@@ -1,0 +1,115 @@
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+.k_fs_70 {
+  font-size: 70px;
+}
+
+aside {
+  z-index: 2;
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.5s opacity, 0.5s visibility;
+}
+
+aside .k_menus {
+  transform: translateX(-300px);
+  transition: 0.5s transform;
+}
+
+aside.active {
+  visibility: visible;
+  opacity: 1;
+}
+
+aside.active .k_menus {
+  transform: translateX(0);
+
+}
+.k_banner {
+    width: 90%;
+    margin: auto;
+  }
+
+  .k_banner .k_dish {
+    left: 100px;
+    /* width: 100%; */
+  }
+
+  .k_content {
+    width: 55%;
+    margin: auto;
+  }
+
+  .k_content_shape {
+    left: 300px;
+    top: 80px;
+  }
+  header {
+    background: #f2f2f2;
+  }
+
+  /* Recipies section  */
+
+  .k_recipes .title {
+    font-size: 20px;
+    font-weight: 400;
+    letter-spacing: 5px;
+  }
+
+  .k_recipe_content {
+    width: 50%;
+  }
+
+  .k_recipe_content p {
+    font-weight: 500;
+  }
+
+  .k_pricing {
+    height: 460px;
+  }
+
+  .k_price_img_box img {
+    object-fit: cover;
+    object-position: 0px -514px;
+  }
+
+  .k_pricing_container {
+    top: 80%;
+  }
+
+  .k_snacks {
+    margin-top: 330px;
+  }
+  .k_organic{
+    background: url(/Organic.jpg);
+    height: 550px;
+    background-size: cover;
+  }
+
+  /* Testimonial */
+  .k_testimonial .k_testimonial_box {
+    width: 60%;
+  }
+  .k_testimonial .k_testimonial_box p {
+    line-height: 35px;
+  }
+  .k_testimonial .k_testimonial_img_box {
+    width: 150px;
+    height: 150px;
+  }
+  .k_testimonial #carouselExampleIndicators {
+    height: 420px;
+  }
+  .k_testimonial #carouselExampleIndicators .k_indicator {
+    background: rgba(0, 0, 0, 0.5);
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    border: none;
+  }
+  .k_testimonial .carousel-control-next-icon,
+  .k_testimonial .carousel-control-prev-icon {
+    filter: invert(100%);
+  }
